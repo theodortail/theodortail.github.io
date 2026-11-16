@@ -3,31 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Physique – Mes liens de cours</title>
+<title>Physique – PTSI B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="banner">
+  <div class="banner-inner">
+    <a class="brand" href="index.html">
+      <!-- Pour ajouter ton logo : mets un fichier logo.png à côté de index.html -->
+      <img class="logo" src="logo.png" alt="" onerror="this.remove()">
+      <span>PTSI B</span>
+    </a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html">Catégories</a>
+      <div class="dd">
+        <button type="button" id="btn-matieres" class="active" aria-expanded="false" aria-controls="menu-matieres">Matières ▾</button>
+        <ul class="dd-list" id="menu-matieres" hidden><li><a href="maths.html">Maths</a></li><li><a href="physique.html" aria-current="page">Physique</a></li><li><a href="anglais.html">Anglais</a></li><li><a href="allemand.html">Allemand</a></li><li><a href="francais.html">Français</a></li><li><a href="sii.html">SII</a></li></ul>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 <main class="page">
-<nav class="top" aria-label="Matières">
-  <a href="index.html">Accueil</a>
-  <a href="maths.html">Maths</a>
-  <a href="physique.html" aria-current="page">Physique</a>
-  <a href="sii.html">SII</a>
-  <a href="francais.html">Français</a>
-  <a href="anglais.html">Anglais</a>
-  <a href="allemand.html">Allemand</a>
-</nav>
 <h1>Physique</h1>
 <p class="intro">Simulations, cours et schémas électriques.</p>
-<ul>
+<ul class="cards">
   <li><a href="https://phet.colorado.edu/fr/" target="_blank" rel="noopener noreferrer"><strong>PhET</strong><span>Simulations interactives de physique et de chimie.</span></a></li>
   <li><a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener noreferrer"><strong>Falstad Circuit</strong><span>Simuler un circuit électrique dans le navigateur.</span></a></li>
   <li><a href="https://fr.khanacademy.org/science" target="_blank" rel="noopener noreferrer"><strong>Khan Academy Sciences</strong><span>Cours de physique et de chimie.</span></a></li>
   <li><a href="https://www.lumni.fr" target="_blank" rel="noopener noreferrer"><strong>Lumni</strong><span>Vidéos et cours de physique-chimie.</span></a></li>
 </ul>
 </main>
+<footer>PTSI B</footer>
+<script src="script.js"></script>
 </body>
 </html>

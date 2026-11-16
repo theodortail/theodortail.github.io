@@ -3,24 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mes liens de cours</title>
+<title>PTSI B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="banner">
+  <div class="banner-inner">
+    <a class="brand" href="index.html">
+      <!-- Pour ajouter ton logo : mets un fichier logo.png à côté de index.html -->
+      <img class="logo" src="logo.png" alt="" onerror="this.remove()">
+      <span>PTSI B</span>
+    </a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html" aria-current="page">Catégories</a>
+      <div class="dd">
+        <button type="button" id="btn-matieres" class="" aria-expanded="false" aria-controls="menu-matieres">Matières ▾</button>
+        <ul class="dd-list" id="menu-matieres" hidden><li><a href="maths.html">Maths</a></li><li><a href="physique.html">Physique</a></li><li><a href="anglais.html">Anglais</a></li><li><a href="allemand.html">Allemand</a></li><li><a href="francais.html">Français</a></li><li><a href="sii.html">SII</a></li></ul>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 <main class="page">
-<h1>Mes <span>liens de cours</span></h1>
-<p class="intro">Choisis une matière pour voir les sites utiles.</p>
-<div class="subjects">
-  <a href="maths.html"><strong>Maths</strong><span>Cours, exercices, graphiques et vérification de calculs.</span></a>
-  <a href="physique.html"><strong>Physique</strong><span>Simulations, cours et schémas électriques.</span></a>
-  <a href="sii.html"><strong>SII</strong><span>Sciences industrielles de l’ingénieur : électronique, programmation et conception 3D.</span></a>
-  <a href="francais.html"><strong>Français</strong><span>Conjugaison, dictionnaires, orthographe et cours.</span></a>
-  <a href="anglais.html"><strong>Anglais</strong><span>Dictionnaires, traductions en contexte et leçons.</span></a>
-  <a href="allemand.html"><strong>Allemand</strong><span>Traduction, dictionnaires et cours pour débutants.</span></a>
-</div>
+<h1>Catégories</h1>
+<p class="intro">Choisis une matière pour accéder aux sites utiles.</p>
+<h2>Sciences</h2>
+<ul class="cards">
+  <li><a href="maths.html"><strong>Maths</strong><span>Cours, exercices, graphiques et vérification de calculs.</span></a></li>
+  <li><a href="physique.html"><strong>Physique</strong><span>Simulations, cours et schémas électriques.</span></a></li>
+  <li><a href="sii.html"><strong>SII</strong><span>Sciences industrielles de l’ingénieur : électronique, programmation et conception 3D.</span></a></li>
+</ul>
+<h2>Langues</h2>
+<ul class="cards">
+  <li><a href="anglais.html"><strong>Anglais</strong><span>Dictionnaires, traductions en contexte et leçons.</span></a></li>
+  <li><a href="allemand.html"><strong>Allemand</strong><span>Traduction, dictionnaires et cours.</span></a></li>
+  <li><a href="francais.html"><strong>Français</strong><span>Conjugaison, dictionnaires, orthographe et cours.</span></a></li>
+</ul>
 </main>
+<footer>PTSI B</footer>
+<script src="script.js"></script>
 </body>
 </html>
