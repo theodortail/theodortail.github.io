@@ -12,6 +12,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .menu a,.menu button{font:inherit;font-weight:600;color:var(--band-text);background:none;border:0;padding:8px 14px;border-radius:6px;text-decoration:none;cursor:pointer}
 .menu a:hover,.menu button:hover{background:rgba(255,255,255,.14)}
 .menu [aria-current="page"],.menu .active{background:var(--accent);color:var(--band)}
+.menu [aria-current="page"]:hover,.menu .active:hover,.menu button[aria-expanded="true"].active{background:var(--accent);color:var(--band)}
+.menu button[aria-expanded="true"]:not(.active){background:rgba(255,255,255,.14)}
 .dd{position:relative}
 .dd-list{position:absolute;top:100%;left:0;z-index:10;min-width:180px;margin:4px 0 0;padding:6px;list-style:none;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
 .dd-list[hidden]{display:none}
