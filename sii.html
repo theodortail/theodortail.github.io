@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>SII – PTSI B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="sii">
 <header class="banner">
   <div class="banner-inner">
     <a class="brand" href="index.html">
@@ -17,27 +18,11 @@
       <img class="logo" src="logo.png" alt="" onerror="this.remove()">
       <span>PTSI B</span>
     </a>
-    <nav class="menu" aria-label="Menu principal">
-      <a href="index.html">Catégories</a>
-      <div class="dd">
-        <button type="button" id="btn-matieres" class="active" aria-expanded="false" aria-controls="menu-matieres">Matières ▾</button>
-        <ul class="dd-list" id="menu-matieres" hidden><li><a href="maths.html">Maths</a></li><li><a href="physique.html">Physique</a></li><li><a href="anglais.html">Anglais</a></li><li><a href="allemand.html">Allemand</a></li><li><a href="francais.html">Français</a></li><li><a href="sii.html" aria-current="page">SII</a></li></ul>
-      </div>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <nav class="menu" id="menu" aria-label="Menu principal"></nav>
   </div>
 </header>
-<main class="page">
-<h1>SII</h1>
-<p class="intro">Sciences industrielles de l’ingénieur : électronique, programmation et conception 3D.</p>
-<ul class="cards">
-  <li><a href="https://www.tinkercad.com" target="_blank" rel="noopener noreferrer"><strong>Tinkercad</strong><span>Concevoir en 3D et simuler des circuits Arduino.</span></a></li>
-  <li><a href="https://www.arduino.cc/reference/fr/" target="_blank" rel="noopener noreferrer"><strong>Arduino Reference</strong><span>Toutes les fonctions du langage Arduino.</span></a></li>
-  <li><a href="https://www.onshape.com" target="_blank" rel="noopener noreferrer"><strong>Onshape</strong><span>Logiciel de CAO 3D gratuit dans le navigateur.</span></a></li>
-  <li><a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener noreferrer"><strong>Falstad Circuit</strong><span>Simuler un circuit électronique.</span></a></li>
-</ul>
-</main>
+<main class="page" id="main"><p>Chargement…</p></main>
 <footer>PTSI B</footer>
-<script src="script.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>

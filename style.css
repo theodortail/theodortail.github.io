@@ -38,3 +38,28 @@ h2{font-size:1.4rem;color:var(--band);margin:36px 0 12px}
 
 footer{max-width:960px;margin:0 auto;padding:0 24px 32px;font-size:.9rem;opacity:.6}
 @media(max-width:600px){.brand{font-size:1.5rem}.logo{height:40px}}
+
+/* Connexion, formulaires, administration */
+.menu .logout{margin-left:8px;border:1px solid rgba(255,255,255,.45)}
+.card-form{display:flex;flex-direction:column;gap:8px;max-width:420px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:16px}
+.card-form label{font-weight:600}
+.card-form .check{display:flex;align-items:center;gap:8px}
+input,textarea{font:inherit;padding:9px 11px;border:1px solid #aab3cc;border-radius:6px;background:#fff;color:var(--text)}
+input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--band)}
+.btn{font:inherit;font-weight:600;padding:10px 16px;border:0;border-radius:6px;background:var(--band);color:#fff;cursor:pointer}
+.btn:hover{background:#26398c}
+.btn.small{padding:6px 12px;font-size:.9rem}
+.btn.danger{background:#b3261e}
+.btn.danger:hover{background:#8f1d17}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.error{color:#b3261e;font-weight:600;margin:0}
+.ok{color:#1b6e3c;font-weight:600;margin:0}
+.pre{white-space:pre-line}
+table.users{border-collapse:collapse;width:100%;max-width:520px;background:var(--card);border:1px solid var(--line)}
+table.users td{padding:8px 12px;border-bottom:1px solid var(--line)}
+table.users td:last-child{text-align:right}
+.admin-sub{margin-bottom:20px}
+.admin-links{list-style:none;padding:0;margin:0 0 8px;max-width:520px}
+.admin-links li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.row input{flex:1 1 150px}

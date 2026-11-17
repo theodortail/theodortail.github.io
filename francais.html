@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Français – PTSI B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="francais">
 <header class="banner">
   <div class="banner-inner">
     <a class="brand" href="index.html">
@@ -17,27 +18,11 @@
       <img class="logo" src="logo.png" alt="" onerror="this.remove()">
       <span>PTSI B</span>
     </a>
-    <nav class="menu" aria-label="Menu principal">
-      <a href="index.html">Catégories</a>
-      <div class="dd">
-        <button type="button" id="btn-matieres" class="active" aria-expanded="false" aria-controls="menu-matieres">Matières ▾</button>
-        <ul class="dd-list" id="menu-matieres" hidden><li><a href="maths.html">Maths</a></li><li><a href="physique.html">Physique</a></li><li><a href="anglais.html">Anglais</a></li><li><a href="allemand.html">Allemand</a></li><li><a href="francais.html" aria-current="page">Français</a></li><li><a href="sii.html">SII</a></li></ul>
-      </div>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <nav class="menu" id="menu" aria-label="Menu principal"></nav>
   </div>
 </header>
-<main class="page">
-<h1>Français</h1>
-<p class="intro">Conjugaison, dictionnaires, orthographe et cours.</p>
-<ul class="cards">
-  <li><a href="https://conjugaison.reverso.net/conjugaison/" target="_blank" rel="noopener noreferrer"><strong>Reverso Conjugaison</strong><span>Conjuguer n’importe quel verbe.</span></a></li>
-  <li><a href="https://www.cnrtl.fr" target="_blank" rel="noopener noreferrer"><strong>CNRTL</strong><span>Dictionnaire, synonymes et étymologie.</span></a></li>
-  <li><a href="https://www.projet-voltaire.fr" target="_blank" rel="noopener noreferrer"><strong>Projet Voltaire</strong><span>S’entraîner à l’orthographe.</span></a></li>
-  <li><a href="https://www.lumni.fr" target="_blank" rel="noopener noreferrer"><strong>Lumni</strong><span>Cours et vidéos pour tous les niveaux.</span></a></li>
-</ul>
-</main>
+<main class="page" id="main"><p>Chargement…</p></main>
 <footer>PTSI B</footer>
-<script src="script.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
